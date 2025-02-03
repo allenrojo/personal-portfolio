@@ -52,16 +52,24 @@ a.nav-item{
     flex: 1;
     margin-bottom: 1rem;
 }
+.project-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr {
+    width:100%;
+    margin:0
+}
 .experience-container p { 
     max-width: 30ch;
 }
 .experience-item {
-    margin-bottom:1rem;
+    margin-bottom:2rem;
 
 }
-.experience-item-description{
-    margin:0;
-}
+
+
 
 p.courses {
     margin:0
