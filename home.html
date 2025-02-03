@@ -8,66 +8,75 @@
     <meta property="og:image" content="/favicon.png" />
     <title>Basic HTML Website</title>
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div>
-      <header>
+    <header class="nav">
+      <div class="logo-container">
+        <img class="logo" src="logo.png">
         <h1>Allen</h1>
-        <nav>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="Articles.html">Articles</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </nav>
-      </header>
+      </div>
+      <nav >
+        <a class="nav-item" href="home.html">Home</a>
+        <a class="nav-item" href="projects.html">Projects</a>
+        <a class="nav-item" href="Articles.html">Articles</a>
+        <a class="nav-item" href="Contact.html">Contact</a>
+    </header>
+    <div class="header-container">
       <h1>Frontend Developer</h1>
     </div>
-    <div>
-      <aside>
+    <div class="main-container">
+      <div class="projects-container">
         <h3>Projects</h3>
-        <li>HTML Only Portfolio</li>
-        <li>Caculator</li>
-        <li>Quiz App</li>
-        <li>Countdown Timer</li>
-        <li>Product Upcoming Page</li>
-      </aside>
-      <main>
         <section>
-          <h3>Work Experience</h3>
+          <p>HTML Only Portfolio</p>
+          <p>Caculator</p>
+          <p>Quiz App</p>
+          <p>Countdown Timer</p>
+          <p>Product Upcoming Page</p>
+        </section>
+
+      </div>
+      <div class="experience-container">
+        <h3>Work Experience</h3>
+        <section class="experience-item">
           <p>roadmap.sh</p>
           <p>Solved all the frontend projects</p>
-          <a>Visit my profile</a>
+          <a href="https://roadmap.sh/u/allenrojo">Visit my profile</a>
         </section>
-        <section>
+        <section class="experience-item">
           <p>OpenSource work</p>
           <p>
             Contributed to 50 opensource projects. Made my own projects with 200
             github stars.
           </p>
-          <a>Visit my profile</a>
+          <a href="https://github.com/allenrojo">Visit my profile</a>
         </section>
-      </main>
-      <aside>
+      </div>
+      <div class="education-container">
         <h3>Education</h3>
-        <p>
-          Graduated with 3.76 out of 4 CGPA. Won ACME hackathon. Organized 30
-          sessions.
-        </p>
-        <p>Courses I took:</p>
-        <li>OOP</li>
-        <li>DSA</li>
-        <li>Web Engineering</li>
-        <li>Articial Intelligence</li>
-        <li>Human Computer Interaction</li>
-        <li>Computer Graphics</li>
-        <li>DBMS</li>
-        <li>Distributed Database Systems</li>
-        <li>Discrete Mathematics</li>
-      </aside>
+        <section>
+          <p>
+            Graduated with 3.76 out of 4 CGPA. Won ACME hackathon. Organized 30
+            sessions.
+          </p>
+          <p>Courses I took:</p>
+          <p>- OOP</p>
+          <p>- DSA</p>
+          <p>- Web Engineering</p>
+          <p>- Articial Intelligence</p>
+          <p>- Human Computer Interaction</p>
+          <p>- Computer Graphics</p>
+          <p>- DBMS</p>
+          <p>- Distributed Database Systems</p>
+          <p>- Discrete Mathematics</p>
+        </section>
+        
+      </div>
     </div>
-    <div>
-      <section>
-        <h3>Reviews from my teachers:</h3>
+    <div class="article-container">
+      <h3>Reviews from my teachers:</h3>
+      <section class="article-item">
         <p>
           John Doe was a brilliant student; always stood out with his
           assignments.
@@ -75,7 +84,7 @@
         <p>Jane Doe</p>
         <p>Assistant Professor</p>
       </section>
-      <section>
+      <section class="article-item">
         <p>
           John Doe was a brilliant student; always stood out with his
           assignments.
@@ -83,7 +92,7 @@
         <p>Jane Doe</p>
         <p>Assistant Professor</p>
       </section>
-      <section>
+      <section class="article-item">
         <p>
           John Doe was a brilliant student; always stood out with his
           assignments.
@@ -92,6 +101,8 @@
         <p>Assistant Professor</p>
       </section>
     </div>
-    <footer>all rights reserved 2025</footer>
+    <div class="footer-container">
+      <footer>© all rights reserved 2025</footer>
+    </div>
   </body>
 </html>

@@ -1,0 +1,94 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+body {
+    margin:1rem;
+    padding:2rem;
+    border-style:solid;
+    font-family: 'Segoe UI';
+    display:flex;
+    flex-direction: column;
+}
+
+.header-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.logo-container {
+    display:flex;
+    align-items: center;   
+}
+h1 {
+    margin:.5rem
+}
+header.nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+img.logo {
+    height: 1.5rem;
+    width:auto;
+
+}
+a.nav-item{
+    text-decoration: none;
+    margin:0.5rem;
+}
+
+.main-container {
+    display:flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.projects-container, .experience-container, .education-container {
+    padding:1rem;
+    border: 0.1rem solid black;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.experience-container p { 
+    max-width: 30ch;
+}
+
+.article-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.article-container h3 {
+    width: 100%;
+}
+.article-item {
+    padding:1rem;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    flex: 1;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+}
+.footer-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 825px){
+    header.nav {
+        flex-direction: column;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+    .projects-container, .experience-container, .education-container {
+        min-width: 100%;
+    }
+    .article-item {
+
+        min-width: 100%;
+    } 
+}
